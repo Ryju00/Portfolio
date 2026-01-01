@@ -700,8 +700,9 @@
                 <div class="project-links">
                   <a href="#project1" class="btn btn-sm btn-dark">Zobacz</a>
                   <a
-                    href="https://github.com/Ryju00/PIANO.git"
+                    href="https://ryju00.github.io/PIANO/"
                     class="btn btn-sm btn-outline-light"
+                    target="_blank"
                     >Demo</a
                   >
                 </div>
@@ -728,8 +729,9 @@
                 <div class="project-links">
                   <a href="#project2" class="btn btn-sm btn-dark">Zobacz</a>
                   <a
-                    href="https://github.com/Ryju00/System-Biblioteki.git"
+                    href="https://github.com/Ryju00/System-Biblioteki"
                     class="btn btn-sm btn-outline-light"
+                    target="_blank"
                     >Demo</a
                   >
                 </div>
@@ -745,17 +747,22 @@
             <div class="project-card">
               <div class="project-img">
                 <img
-                  src="img/Calculator.png"
-                  alt="Calculator"
+                  src="img/tracker.png"
+                  alt="Tracker"
                   class="img-fluid"
                 />
               </div>
               <div class="project-info">
-                <h3>Kalkulator</h3>
-                <p>Zbudowany za pomocą HTML, CSS, JS</p>
+                <h3>Task Tracker</h3>
+                <p>Zbudowany za pomocą JAVA, HTML, CSS, String Boot, Thymeleaf, Bootstrap, H2, JPA</p>
                 <div class="project-links">
                   <a href="#project3" class="btn btn-sm btn-dark">Zobacz</a>
-                  <a href="#" class="btn btn-sm btn-outline-light">Demo</a>
+                  <a
+                    href="https://github.com/Ryju00/TaskTracker.git"
+                    class="btn btn-sm btn-outline-light"
+                    target="_blank"
+                    >Demo</a
+                  >
                 </div>
               </div>
             </div>
@@ -778,6 +785,7 @@
                   <a
                     href="https://github.com/Ryju00/PIGGY_BANK.git"
                     class="btn btn-sm btn-outline-light"
+                    target="_blank"
                     >Demo</a
                   >
                 </div>
@@ -824,6 +832,7 @@
             <a
               href="https://github.com/Ryju00/PIANO.git"
               class="btn btn-outline-light"
+              target="_blank"
               >Zobacz Demo</a
             >
           </div>
@@ -839,7 +848,11 @@
           <a href="#portfolio" class="close-popup">&times;</a>
         </div>
         <div class="popup-body">
-          <img src="img/biblioteka.jpg" alt="Biblioteka" class="img-fluid mb-4" />
+          <img
+            src="img/biblioteka.jpg"
+            alt="Biblioteka"
+            class="img-fluid mb-4"
+          />
           <h3>Opis Projektu</h3>
           <p>
             Stworzona na potrzebę projektu w 2 klasie technikum. To konsolowa
@@ -854,8 +867,14 @@
           <ul>
             <li>Dodawanie nowych książek z walidacją formatu ISBN</li>
             <li>Usuwanie, wypożyczanie i zwracanie książek po numerze ISBN</li>
-            <li>Wyszukiwanie książek po tytule lub autorze z pomiarem czasu działania</li>
-            <li>Wyświetlanie statystyk (liczba dostępnych/wypożyczonych, najpopularniejsi autorzy)</li>
+            <li>
+              Wyszukiwanie książek po tytule lub autorze z pomiarem czasu
+              działania
+            </li>
+            <li>
+              Wyświetlanie statystyk (liczba dostępnych/wypożyczonych,
+              najpopularniejsi autorzy)
+            </li>
             <li>Wyświetlanie pełnej listy książek zapisanych w pliku CSV</li>
           </ul>
 
@@ -868,6 +887,7 @@
             <a
               href="https://github.com/Ryju00/System-Biblioteki.git"
               class="btn btn-outline-light"
+              target="_blank"
               >Zobacz Demo</a
             >
           </div>
@@ -879,41 +899,50 @@
     <div id="project3" class="project-popup">
       <div class="popup-content">
         <div class="popup-header">
-          <h2>Kalkulator</h2>
+          <h2>Task Tracker</h2>
           <a href="#portfolio" class="close-popup">&times;</a>
         </div>
         <div class="popup-body">
           <img
-            src="img/Calculator.png"
-            alt="Calculator"
+            src="img/tracker.png"
+            alt="Tracker"
             class="img-fluid mb-4"
           />
           <h3>Opis Projektu</h3>
           <p>
-            Kalkulator to podstawowa aplikacja umożliwiająca wykonywanie
-            operacji matematycznych. Może mieć formę prostą (cztery działania)
-            lub zaawansowaną (funkcje trygonometryczne, pierwiastki, potęgi
-            itp.).
+            Task Tracker to aplikacja webowa do zarządzania zadaniami i
+            treningami. Umożliwia łatwe dodawanie, edycję, oznaczanie jako
+            ukończone oraz wyszukiwanie zadań z filtrami.
           </p>
 
           <h3>Główne funkcje</h3>
           <ul>
-            <li>Dodawanie, odejmowanie, mnożenie, dzielenie</li>
-            <li>Obsługa działań z nawiasami</li>
-            <li>Historia działań</li>
-            <li>Obsługa liczb zmiennoprzecinkowych</li>
-            <li>Przejrzysty interfejs użytkownika</li>
+            <li>Pełny CRUD (Create, Read, Update, Delete) z intuicyjnym formularzem inline</li>
+            <li>Toggle status "Skończone"</li>
+            <li>Wyszukiwanie po nazwie + filtr ukończonych zadań</li>
+            <li>Responsywny interfejs Bootstrap</li>
+            <li>Automatyczna walidacja danych (nazwa wymagana, poniżej 100 znaków)</li>
+            <li>Lista zadań z paginacją i statusami</li>
+            <li>Szybka edycja nazwy/opisu bez przeładowania strony</li>
+            <li>Potwierdzenia usuwania z JavaScript</li>
+            <li>Baza danych H2 z automatyczną migracją JPA</li>
           </ul>
 
           <h3>Użyte Technologie</h3>
           <div class="tech-stack">
+            <span class="tech-tag">JAVA</span>
+            <span class="tech-tag">SPRING BOOT 4.0.1</span>
             <span class="tech-tag">HTML</span>
             <span class="tech-tag">CSS</span>
-            <span class="tech-tag">JAVASCRIPT</span>
+            <span class="tech-tag">BOOTSTRAP</span>
+            <span class="tech-tag">THYMELEAF</span>
+            <span class="tech-tag">H2 + JPA</span>
           </div>
 
           <div class="popup-footer">
-            <a href="#" class="btn btn-outline-light">Zobacz Demo</a>
+            <a href="https://github.com/Ryju00/TaskTracker.git" class="btn btn-outline-light" target="_blank"
+              >Zobacz Demo</a
+            >
           </div>
         </div>
       </div>
@@ -957,6 +986,7 @@
             <a
               href="https://github.com/Ryju00/PIGGY_BANK.git"
               class="btn btn-outline-light"
+              target="_blank"
               >Zobacz Demo</a
             >
           </div>
